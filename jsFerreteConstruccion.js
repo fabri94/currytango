@@ -6,7 +6,19 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
+	var largo;
+	var ancho;
+	var perimetro;
 
+	largo=document.getElementById('Largo').value;
+	largo=parseInt(largo);
+	ancho=document.getElementById('Ancho').value;
+	ancho=parseInt(ancho);
+
+	perimetro=[(largo+ancho)*2]*3;
+	perimetro=parseInt(perimetro);
+
+	console.log(perimetro);
 }
 function Circulo () 
 {
@@ -16,26 +28,27 @@ function Circulo ()
 	radio=document.getElementById('Radio').value;
 	radio=parseInt(radio);
 
-	circunferencia=2*Math.PI*radio;
+	circunferencia=2*Math.PI*(radio);
+	circunferencia=parseInt(circunferencia);
 
 	console.log(circunferencia);
 }
 function Materiales () 
 {
+	var bolsasCemento;
+	var bolsasCal;
 	var largo;
 	var ancho;
-	var bolsasCal;
-	var bolsasCemento;
 
-	largo=document.getElementById('Largo').value;
-	largo=parseInt(largo);
 	ancho=document.getElementById('Ancho').value;
 	ancho=parseInt(ancho);
+	largo=document.getElementById('Largo').value;
+	largo=parseInt(largo);
 
-	bolsasCal=3*(largo*ancho);
+	bolsasCal=(largo*ancho)*3;
 	bolsasCal=parseInt(bolsasCal);
-	bolsasCemento=2*(largo*ancho);
+	bolsasCemento=(largo*ancho)*2;
 	bolsasCemento=parseInt(bolsasCemento);
 
-	console.log("Las bolsas de cal que se necesitaran seran " +bolsasCal+  " y las de cemento seran " +bolsasCemento);
+	console.log("Se necesitaran "+bolsasCal+ " bolsas de cal y "+bolsasCemento+ " bolsas de cemento");
 }
