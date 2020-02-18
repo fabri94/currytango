@@ -35,4 +35,22 @@ function mostrar()
 			console.log("APROBÓ");
 		}
 	}
-}/*
+	
+	tambien se puede hacer como
+
+	if(numeroRandom<4)
+	{
+		console.log("VAMOS, LA PRÓXIMA SE PUEDE");
+	}
+	else
+	{
+		if(numeroRandom>8)
+		{
+			console.log("EXCELENTE");	
+		}
+		else
+		{
+			console.log("APROBÓ");	
+		}
+	}
+}*/
